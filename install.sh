@@ -34,9 +34,9 @@ brew cask install microsoft-office \
 # qlmarkdown: Preview Markdown files
 # qlstephen:  Preview plain text files without a file extension. Example: README, CHANGELOG, etc.
 brew cask install qlimagesize \ 
-	quicklook-json \
-	qlmarkdown \
-	qlstephen
+    quicklook-json \
+    qlmarkdown \
+    qlstephen
 
 # Amphetamine
 mas install 937984704
