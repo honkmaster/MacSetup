@@ -26,7 +26,8 @@ brew cask install microsoft-office \
     intel-power-gadget \
     macdown \
     freemind \
-    imageoptim
+    imageoptim \
+    powershell
 
 # Quick look plugins
 # qlimagesize: Display image size and resolution
