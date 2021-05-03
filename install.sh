@@ -11,7 +11,7 @@ brew update
 brew install mas
 
 # Casks 
-brew cask install microsoft-office \
+brew install --cask microsoft-office \
     google-chrome \
     tweetbot \
     textmate \
@@ -27,14 +27,16 @@ brew cask install microsoft-office \
     macdown \
     freemind \
     imageoptim \
-    powershell
+    powershell \
+    postman \
+    zeplin
 
 # Quick look plugins
 # qlimagesize: Display image size and resolution
 # quicklook-json: Preview JSON files
 # qlmarkdown: Preview Markdown files
 # qlstephen:  Preview plain text files without a file extension. Example: README, CHANGELOG, etc.
-brew cask install qlimagesize \ 
+brew install --cask qlimagesize \ 
     quicklook-json \
     qlmarkdown \
     qlstephen
@@ -55,6 +57,5 @@ defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 # Remove brew cruft
 brew cleanup
-brew cask cleanup
 
 echo "Macbook setup completed!"
