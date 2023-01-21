@@ -4,7 +4,7 @@ echo "Starting setup"
 xcode-select --install
 
 # Install Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" 
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew update 
 
 # Install Brew tools
@@ -12,25 +12,33 @@ brew install mas
 
 # Casks 
 brew install --cask microsoft-office \
-    google-chrome \
-    tweetbot \
     textmate \
     microsoft-teams \
-    slack \
     sourcetree \
     visual-studio-code \
     gimp \
     sf-symbols \
     istat-menus \
     sketch \
-    intel-power-gadget \
     macdown \
+    monodraw \
     freemind \
     imageoptim \
-    powershell \
-    postman \
-    zeplin
+    xcodes \
+    zeplin \
+    namechanger
 
+# Amphetamine
+mas install 937984704
+
+# Developer tools
+brew install swiftlint \
+    swiftformat \
+    yq \
+    xcodegen \
+    phrase-cli \
+    swiftgen
+    
 # Quick look plugins
 # qlimagesize: Display image size and resolution
 # quicklook-json: Preview JSON files
@@ -40,13 +48,6 @@ brew install --cask qlimagesize \
     quicklook-json \
     qlmarkdown \
     qlstephen
-
-# Amphetamine
-mas install 937984704
-
-# Xcode
-mas install 497799835
-brew install swiftlint
 
 # Show filename extensions by default
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
