@@ -37,7 +37,8 @@ brew install swiftlint \
     yq \
     xcodegen \
     phrase-cli \
-    swiftgen
+    swiftgen \
+    licenseplist
     
 # Quick look plugins
 # qlimagesize: Display image size and resolution
