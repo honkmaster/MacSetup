@@ -5,10 +5,13 @@ xcode-select --install
 
 # Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew update 
 
-# Install Brew tools
-brew install mas
+# Export path for Apple Silicon Homebrew installation
+export PATH=/opt/homebrew/bin:$PATH
+export PATH=/opt/homebrew/sbin:$PATH
+
+# Update brew
+brew update 
 
 # Casks 
 brew install --cask microsoft-office \
@@ -19,7 +22,6 @@ brew install --cask microsoft-office \
     gimp \
     sf-symbols \
     istat-menus \
-    sketch \
     macdown \
     monodraw \
     freemind \
@@ -29,14 +31,11 @@ brew install --cask microsoft-office \
     namechanger \
     periphery
 
-# Amphetamine
-mas install 937984704
-
-# MeetingBar
-mas install 1532419400
-
-# DevCleaner
-mas install 1388020431
+# Install tools from MAS
+brew install mas
+mas install 937984704 # Amphetamine
+mas install 1532419400 # MeetingBar
+mas install 1388020431 # DevCleaner
 
 # Developer tools
 brew install swiftlint \
@@ -47,7 +46,8 @@ brew install swiftlint \
     swiftgen \
     licenseplist \
     handbrake \
-    git-quick-stats
+    git-quick-stats \
+    openapi-generator
     
 # Quick look plugins
 # qlimagesize: Display image size and resolution
