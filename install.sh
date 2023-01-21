@@ -26,10 +26,17 @@ brew install --cask microsoft-office \
     imageoptim \
     xcodes \
     zeplin \
-    namechanger
+    namechanger \
+    periphery
 
 # Amphetamine
 mas install 937984704
+
+# MeetingBar
+mas install 1532419400
+
+# DevCleaner
+mas install 1388020431
 
 # Developer tools
 brew install swiftlint \
@@ -38,7 +45,9 @@ brew install swiftlint \
     xcodegen \
     phrase-cli \
     swiftgen \
-    licenseplist
+    licenseplist \
+    handbrake \
+    git-quick-stats
     
 # Quick look plugins
 # qlimagesize: Display image size and resolution
