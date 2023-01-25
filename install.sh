@@ -13,6 +13,9 @@ export PATH=/opt/homebrew/sbin:$PATH
 # Update brew
 brew update 
 
+# Add taps
+brew tap peripheryapp/periphery
+
 # Casks 
 brew install --cask microsoft-office \
     textmate \
@@ -48,7 +51,11 @@ brew install swiftlint \
     handbrake \
     git-quick-stats \
     openapi-generator
-    
+
+# Xcode defaults
+defaults write com.apple.dt.Xcode ShowBuildOperationDuration YES
+defaults write com.apple.dt.Xcode IDEAdditionalCounterpartSuffixes -array-add "ViewModel" "View" "Screen"
+
 # Quick look plugins
 # qlimagesize: Display image size and resolution
 # quicklook-json: Preview JSON files
