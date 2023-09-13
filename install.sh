@@ -32,7 +32,8 @@ brew install --cask microsoft-office \
     xcodes \
     zeplin \
     namechanger \
-    periphery
+    periphery \
+    monitorcontrol
 
 # Install tools from MAS
 brew install mas
@@ -50,7 +51,8 @@ brew install swiftlint \
     licenseplist \
     handbrake \
     git-quick-stats \
-    openapi-generator
+    openapi-generator \
+    xcodesorg/made/xcodes
 
 # Xcode defaults
 defaults write com.apple.dt.Xcode ShowBuildOperationDuration YES
